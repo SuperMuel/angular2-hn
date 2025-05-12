@@ -1,5 +1,5 @@
-@import "../../shared/scss/media";
-@import "../../shared/scss/theme_variables";
+@use "../../shared/scss/media";
+@use "../../shared/scss/theme_variables";
 
 #header {
   color: #fff;
@@ -10,7 +10,7 @@
   z-index: 1;
   width: 100%;
 
-  @media #{$mobile-only} {
+  @media #{media.$mobile-only} {
     height: 50px;
     position: fixed;
     top: 0;
@@ -35,7 +35,7 @@
   height: 32px;
   border-radius: 50%;
 
-  @media #{$mobile-only} {
+  @media #{media.$mobile-only} {
     left: 16px;
     top: 12px;
   }
@@ -45,7 +45,7 @@
   width: 50px;
   padding: 3px 8px 0;
 
-  @media #{$mobile-only} {
+  @media #{media.$mobile-only} {
     width: 45px;
     padding: 0 0 0 10px;
   }
@@ -68,7 +68,7 @@ h1 {
   margin-right: 30px;
   margin-bottom: 2px;
 
-  @media #{$mobile-only} {
+  @media #{media.$mobile-only} {
     display: none;
   }
 }
@@ -81,7 +81,7 @@ h1 {
   top: 27px;
   z-index: -1;
 
-  @media #{$mobile-only} {
+  @media #{media.$mobile-only} {
     top: 22px;
   }
 }
@@ -91,7 +91,7 @@ h1 {
   left: 60px;
   font-size: 16px;
 
-  @media #{$mobile-only} {
+  @media #{media.$mobile-only} {
     width: 100%;
     left: 0;
   }
@@ -101,7 +101,7 @@ h1 {
   display: inline-block;
   margin-left: 20px;
 
-  @media #{$mobile-only} {
+  @media #{media.$mobile-only} {
     margin-left: 60px;
   }
 
@@ -127,7 +127,7 @@ h1 {
   right: 20px;
   height: 100%;
 
-  @media #{$mobile-only} {
+  @media #{media.$mobile-only} {
     right: 10px;
   }
 
@@ -142,7 +142,7 @@ h1 {
       cursor: pointer;
     }
 
-    @media #{$mobile-only} {
+    @media #{media.$mobile-only} {
       margin-top: 15px;
     }
   }

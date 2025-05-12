@@ -1,5 +1,5 @@
-@import "../shared/scss/media";
-@import "../shared/scss/theme_variables";
+@use "../shared/scss/media";
+@use "../shared/scss/theme_variables";
 
 .main-content {
   position: relative;
@@ -18,13 +18,13 @@
   z-index: 0;
 }
 
-@media #{$tablet-only} {
+@media #{media.$tablet-only} {
   .item {
     padding: 10px 20px 0 40px;
   }
 }
 
-@media #{$mobile-only} {
+@media #{media.$mobile-only} {
   .item {
     box-sizing: border-box;
     padding: 110px 15px 0 15px;
@@ -49,13 +49,13 @@ a {
   text-decoration: none;
 }
 
-@media #{$mobile-only} {
+@media #{media.$mobile-only} {
   .laptop {
     display: none;
   }
 }
 
-@media #{$laptop-only} {
+@media #{media.$laptop-only} {
   .mobile {
     display: none;
   }
@@ -74,7 +74,7 @@ a {
   margin: 0 75px;
 }
 
-@media #{$mobile-only} {
+@media #{media.$mobile-only} {
   .title {
     font-size: 15px;
   }
@@ -115,7 +115,7 @@ a {
   padding-bottom: 10px;
 }
 
-@media #{$mobile-only} {
+@media #{media.$mobile-only} {
   .item-header {
     padding: 10px 0 10px 0;
     position: fixed;

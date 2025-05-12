@@ -1,5 +1,5 @@
-@import "../../scss/media";
-@import "../../scss/theme_variables";
+@use "../../scss/media";
+@use "../../scss/theme_variables";
 
 .loader {
   -webkit-animation: load1 1s infinite ease-in-out;
@@ -28,7 +28,7 @@
     height: 70px;
     margin: 40px 0 40px 40px;
 
-  @media #{$mobile-only} {
+  @media #{media.$mobile-only} {
     display: block;
     position: relative;
     margin: 45vh 0;
@@ -49,7 +49,7 @@
     left: 1.5em;
   }
 
-  @media #{$mobile-only} {
+  @media #{media.$mobile-only} {
     margin: 20px auto;
   }
 }
@@ -80,7 +80,7 @@
   }
 }
 
-@media #{$mobile-only} {
+@media #{media.$mobile-only} {
   @-webkit-keyframes load1 {
     0%,
       80%,

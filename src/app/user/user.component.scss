@@ -1,5 +1,5 @@
-@import "../shared/scss/media";
-@import "../shared/scss/theme_variables";
+@use "../shared/scss/media";
+@use "../shared/scss/theme_variables";
 
 :host ::ng-deep pre {
   white-space: pre-wrap;
@@ -9,7 +9,7 @@
   padding: 30px;
 }
 
-@media #{$mobile-only} {
+@media #{media.$mobile-only} {
   .profile {
     padding: 110px 15px 0 15px;
   }
@@ -47,7 +47,7 @@
   }
 }
 
-@media #{$laptop-only} {
+@media #{media.$laptop-only} {
   .mobile {
     display: none;
   }
@@ -74,7 +74,7 @@
   }
 }
 
-@media #{$mobile-only} {
+@media #{media.$mobile-only} {
   .main-details {
     margin-top: 20px;
 
@@ -84,7 +84,7 @@
   }
 }
 
-@media #{$mobile-only} {
+@media #{media.$mobile-only} {
   .main-details .right {
     font-size: 18px;
   }

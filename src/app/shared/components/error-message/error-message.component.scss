@@ -1,12 +1,12 @@
 @use "sass:math";
-@import "../../scss/media";
-@import "../../scss/theme_variables";
+@use "../../scss/media";
+@use "../../scss/theme_variables";
 
 .error-section {
   height: 300px;
   margin: 200px;
 
-  @media #{$mobile-only} {
+  @media #{media.$mobile-only} {
     height: 0;
     display: block;
     position: relative;
@@ -24,8 +24,8 @@
   }
 
   .skull {
-    width: $skull-size;
-    height: $skull-size;
+    width: theme_variables.$skull-size;
+    height: theme_variables.$skull-size;
     position: relative;
     top: 0;
     left: 0;
@@ -71,9 +71,9 @@
           content: "";
           position: absolute;
           top: 100%;
-          left: math.div($skull-size, 15);
-          border-right: math.div($skull-size, 20) solid transparent;
-          border-left: math.div($skull-size, 40) solid transparent;
+          left: math.div(theme_variables.$skull-size, 15);
+          border-right: math.div(theme_variables.$skull-size, 20) solid transparent;
+          border-left: math.div(theme_variables.$skull-size, 40) solid transparent;
         }
       }
     }
@@ -84,7 +84,7 @@
       position: absolute;
       top: 75%;
       left: 30%;
-      border-radius: 0 0 math.div($skull-size, 10) math.div($skull-size, 10);
+      border-radius: 0 0 math.div(theme_variables.$skull-size, 10) math.div(theme_variables.$skull-size, 10);
 
       &:before {
         content: "";

@@ -1,5 +1,5 @@
-@import "../../shared/scss/media";
-@import "../../shared/scss/theme_variables";
+@use "../../shared/scss/media";
+@use "../../shared/scss/theme_variables";
 
 #footer {
   position: relative;
@@ -17,7 +17,7 @@
     }
   }
 
-  @media #{$mobile-only} {
+  @media #{media.$mobile-only} {
     display: none;
   }
 }
