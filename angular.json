@@ -119,5 +119,7 @@
       }
     }
   },
-  "defaultProject": "angular-hnpwa"
+  "cli": {
+    "analytics": "7e9a0c04-4006-495e-8fe3-706ab340021e"
+  }
 }
