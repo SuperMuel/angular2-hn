@@ -1,3 +1,8 @@
+This repository is a fork of [housseindjirdeh/angular2-hn](https://github.com/housseindjirdeh/angular2-hn) that demonstrates a complete migration path from Angular 9 to Angular 19.
+
+---
+
+
 <p align="center">
   <a href="https://angular2-hn.firebaseapp.com">
     <img alt="Angular 2 HN" title="Angular 2 HN" src="http://i.imgur.com/J303pQ4.png" width="150">
