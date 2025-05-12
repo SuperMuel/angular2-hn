@@ -1,10 +1,11 @@
 @import "../../shared/scss/media";
 @import "../../shared/scss/theme_variables";
 
-:host >>> {
+:host ::ng-deep {
   a {
     font-weight: bold;
     text-decoration: none;
+
     &:hover {
       text-decoration: underline;
     }
@@ -17,6 +18,7 @@
   font-weight: bold;
   letter-spacing: 0.5px;
   margin-bottom: 8px;
+
   a {
     text-decoration: none;
 
@@ -24,6 +26,7 @@
       text-decoration: underline;
     }
   }
+
   .time {
     padding-left: 5px;
   }
@@ -33,6 +36,7 @@
   .meta {
     font-size: 14px;
     margin-bottom: 10px;
+
     .time {
       padding: 0;
       float: right;
@@ -49,6 +53,7 @@
   font-weight: bold;
   letter-spacing: 0.5px;
   margin: 30px 0;
+
   a {
     text-decoration: none;
   }

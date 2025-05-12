@@ -1,3 +1,4 @@
+@use "sass:math";
 @import "./media";
 @import "./theme_variables";
 
@@ -7,8 +8,7 @@
 
 ---------------------------------- */
 
-@mixin theme(
-  $name,
+@mixin theme($name,
   $body-background-color,
   $wrapper-background-color,
   $wrapper-mobile-background-color,
@@ -19,14 +19,13 @@
   $subtext-color,
   $secondary-link-color,
   $logo-inner-color,
-  $border
-) {
+  $border) {
   .#{$name} {
     .body-cover {
       background: $body-background-color;
 
       @media #{$mobile-only} {
-       background: $wrapper-mobile-background-color;
+        background: $wrapper-mobile-background-color;
       }
     }
 
@@ -35,14 +34,14 @@
       color: $wrapper-color;
 
       @media #{$mobile-only} {
-       background: $wrapper-mobile-background-color;
+        background: $wrapper-mobile-background-color;
       }
 
       a {
         color: $item-a-color;
 
         &:visited {
-            color: $item-a-visited-color;
+          color: $item-a-visited-color;
         }
       }
 
@@ -73,7 +72,12 @@
         }
       }
 
-      .subtext, .subtext-palm, .subtext-laptop, .domain, .meta, .deleted-meta{
+      .subtext,
+      .subtext-palm,
+      .subtext-laptop,
+      .domain,
+      .meta,
+      .deleted-meta {
         color: $subtext-color;
 
         a {
@@ -103,7 +107,8 @@
         color: $secondary-link-color;
         background: $secondary-link-color;
 
-        &:before, &:after {
+        &:before,
+        &:after {
           background: $secondary-link-color;
         }
       }
@@ -126,7 +131,8 @@
           .head {
             background-color: $secondary-link-color;
 
-            &:before, &:after {
+            &:before,
+            &:after {
               background-color: $wrapper-background-color;
 
               @media #{$mobile-only} {
@@ -142,10 +148,10 @@
               }
 
               &:before {
-                border-top: $skull-size / 8 solid $wrapper-background-color;
+                border-top: math.div($skull-size, 8) solid $wrapper-background-color;
 
                 @media #{$mobile-only} {
-                  border-top: $skull-size / 8 solid $wrapper-mobile-background-color;
+                  border-top: math.div($skull-size, 8) solid $wrapper-mobile-background-color;
                 }
               }
             }
@@ -170,7 +176,8 @@
               background-color: $wrapper-mobile-background-color;
             }
 
-            &:before, &:after {
+            &:before,
+            &:after {
               background-color: $wrapper-background-color;
 
               @media #{$mobile-only} {
@@ -185,6 +192,7 @@
         .name {
           color: $secondary-link-color;
         }
+
         .right {
           color: $secondary-link-color;
         }
@@ -193,8 +201,7 @@
   }
 }
 
-@include theme(
-  default,
+@include theme(default,
   $theme-day-body-background-color,
   $theme-day-wrapper-background-color,
   $theme-day-wrapper-mobile-background-color,
@@ -205,11 +212,9 @@
   $theme-day-subtext-color,
   $theme-day-secondary-color,
   $theme-day-logo-inner,
-  $theme-day-border
-);
+  $theme-day-border);
 
-@include theme(
-  night,
+@include theme(night,
   $theme-night-body-background-color,
   $theme-night-wrapper-background-color,
   $theme-night-wrapper-mobile-background-color,
@@ -220,11 +225,9 @@
   $theme-night-subtext-color,
   $theme-night-secondary-color,
   $theme-night-logo-inner,
-  $theme-night-border
-);
+  $theme-night-border);
 
-@include theme(
-  amoledblack,
+@include theme(amoledblack,
   $theme-amoledblack-body-background-color,
   $theme-amoledblack-body-background-color,
   $theme-amoledblack-body-background-color,
@@ -235,8 +238,7 @@
   $theme-amoledblack-subtext-color,
   $theme-amoledblack-secondary-color,
   $theme-amoledblack-body-background-color,
-  $theme-amoledblack-secondary-color
-);
+  $theme-amoledblack-secondary-color);
 
 /* ----------------------------------
 
